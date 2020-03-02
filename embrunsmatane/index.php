@@ -84,7 +84,7 @@
 
         </form>
 
-        <p>Nos Suggestions : <span id="txtName"></span></p>
+        <p>Articles Correspondants : <span id="txtName"></span></p>
 						<div class="feature-grid">
 
 <?php
