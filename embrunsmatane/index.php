@@ -10,7 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href=<?php echo get_template_directory_uri()."/style.css"?> />
-		
+		<script type="text/javascript" src=<?php echo get_template_directory_uri()."/suggestion.js" ?> ></script>
 	</head>
 	<body class="landing">
 <?php get_header(); ?>
@@ -78,9 +78,13 @@
 							<h2>Découvrez mes oeuvres informatiques</h2>
 							<p>N'hésitez pas à cliquer sur chacune d'entre elles pour en découvrir les détails</p>
 						</header>
-						
+						<form method="POST" action="index.php">
 
-        
+            <p><input type="text" size="40" id="txtHint"  onkeyup="afficherSuggestion(this.value)"></p>
+
+        </form>
+
+        <p>Nos Suggestions : <span id="txtName"></span></p>
 						<div class="feature-grid">
 
 <?php
